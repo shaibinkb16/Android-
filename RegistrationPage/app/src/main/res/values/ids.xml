@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioGroup" type="id" />
+    <item name="female" type="id" />
+    <item name="male" type="id" />
+</resources>

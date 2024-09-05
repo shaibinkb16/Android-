@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
     public void Login1(View view) {
         EditText userName=findViewById(R.id.et1);
         EditText password=findViewById(R.id.password);
+        EditText text=findViewById(R.id.text3);
+
         String inputUsername = userName.getText().toString();
         String inputPassword = password.getText().toString();
+        String inputText = text.getText().toString();
+
         String user="Admin";
         String pass="Admin";
         if(inputUsername.isEmpty() || inputPassword.isEmpty()) {
@@ -41,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         else if(inputPassword.equals(pass)&& inputUsername.equals(user)){
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            intent.putExtra("USERNAME", inputText);
             startActivity(intent);
         }
         else {
