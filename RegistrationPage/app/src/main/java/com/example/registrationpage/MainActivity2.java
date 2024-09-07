@@ -43,13 +43,13 @@ public class MainActivity2 extends AppCompatActivity {
         String dob = sharedPreferences.getString("DOB", "Not Available");
         String gender = sharedPreferences.getString("Gender", "Not Available");
 
-        firstNameTextView.setText("First Name: " + firstName);
-        lastNameTextView.setText("Last Name: " + lastName);
-        emailTextView.setText("Email: " + email);
-        phoneTextView.setText("Phone: " + phone);
-        passwordTextView.setText("Password: " + password);
-        dobTextView.setText("Date of Birth: " + dob);
-        genderTextView.setText("Gender: " + gender);
+        firstNameTextView.setText("First Name:     " + firstName);
+        lastNameTextView.setText("Last Name:     " + lastName);
+        emailTextView.setText("Email: "     + email);
+        phoneTextView.setText("Phone:     " + phone);
+        passwordTextView.setText("Password:     " + password);
+        dobTextView.setText("Date of Birth:    " + dob);
+        genderTextView.setText("Gender:     " + gender);
     }
 
     private void clearUserData() {
